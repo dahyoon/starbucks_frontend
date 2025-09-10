@@ -1,0 +1,70 @@
+@tailwind utilities;
+
+@import "tailwindcss";
+@import "./fonts.css";
+@import "./colors.css";
+
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  /*
+  width:100%;
+  */
+  height: 100%;
+  /*
+  max-width: 400px;
+  */
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+}
+#app {
+  margin: 0;
+  padding: 0;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.Footer {
+  background: #ffffff;
+  justify-items: center;
+}
+
+.hide-scrollbar {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
