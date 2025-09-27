@@ -1,11 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from "vue-router";
+import BaseLayout from "./components/layout/BaseLayout.vue";
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <BaseLayout>
+    <RouterView />
+  </BaseLayout>
 </template>
 
 <style scoped></style>
