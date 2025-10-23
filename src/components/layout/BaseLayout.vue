@@ -5,7 +5,9 @@ import FooterWrap from "@/components/layout/footer/FooterWrap.vue";
 
 <template>
   <GnbWrap class="GnbWrap" />
-  <slot />
+  <div class="ContentWrap">
+    <slot />
+  </div>
   <FooterWrap class="FooterWrap" />
 </template>
 
@@ -14,6 +16,9 @@ import FooterWrap from "@/components/layout/footer/FooterWrap.vue";
 
 .GnbWrap {
   @apply fixed;
+}
+.ContentWrap {
+  @apply pt-[7.5rem]; /* Gnb 높이만큼 패딩 추가 */
 }
 .FooterWrap {
   @apply bottom-0;
