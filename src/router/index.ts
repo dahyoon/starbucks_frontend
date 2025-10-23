@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from "vue-router";
-// import { authRouteRecordRaw } from "@/router/authRoute";
+import { coffeeRecordRaw } from "@/router/coffeeRoutes.ts";
 // import { myPageRouteRecordRaw } from "@/router/mypageRoutes";
 // import { mainRouteRecordRaw } from "@/router/mainRoute";
 // import { authStore } from "@/stores/authStore";
@@ -13,6 +13,8 @@ const routes: RouteRecordRaw[] = [
     name: "home",
     component: () => import("@/pages/HomePage.vue"),
   },
+  // COFFEE 라우트
+  ...coffeeRecordRaw,
   // 404 NotFound
   // {
   //   path: "/:paths(.*)*",
